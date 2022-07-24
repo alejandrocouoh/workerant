@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/blankFragmentMicuenta"
+        android:title="@string/Micuenta">
+        <menu>
+            <item
+                android:id="@+id/ipersonal"
+                android:title="Información personal"/>
+            <item
+                android:id="@+id/experience"
+                android:title="Experiencia"/>
+            <item
+                android:id="@+id/mPago"
+                android:title="Medios de pago"/>
+        </menu>
+
+    </item>
+    <item
+        android:id="@+id/Busqueda"
+        android:title="@string/Busque"
+        />
+    <item
+        android:id="@+id/Nosotros"
+        android:title="@string/Acerca"
+        />
+    <item
+        android:id="@+id/logauot"
+        android:title="@string/logout"
+        />
+
+</menu>
