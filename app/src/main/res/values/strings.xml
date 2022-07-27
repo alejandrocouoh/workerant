@@ -14,4 +14,19 @@
     <string name="logout">Cerrar</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="Etiqueta">Información Personal</string>
+    <string name="Nombres">Nombre(s): </string>
+    <string name="ApellidoP">Apellido Paterno: </string>
+    <string name="ApellidoM">Apellido Materno: </string>
+    <string name="Direccion">Dirección: </string>
+    <string name="Ciudad">Ciudad: </string>
+    <string name="estado">Estado: </string>
+    <string name="pais">País: </string>
+    <string name="fecha">Fecha de nacimiento</string>
+    <string name="botonGuardar">Guardar</string>
+    <!-- SECCIÓN DEL FRAGMENTO EXPERIENCIA: Strings del fragmento -->
+    <string name="textoExperiencia">Experiencia Profesional.</string>
+    <string name="nivel">Nivel de Estudios: </string>
+    <string name="Titulo">Titulo profesional: </string>
+    <string name="Escuela">Escuela: </string>
 </resources>

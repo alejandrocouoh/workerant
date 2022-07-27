@@ -1,33 +1,160 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".BlankFragmentMicuenta">
 
     <!-- TODO: Update blank fragment layout -->
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/textView_etiqueta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/Etiqueta"
+            android:textAlignment="center"
+            android:textColor="@android:color/background_dark"
+            android:textSize="35sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
 
 
-    <Button
-        android:id="@+id/button2_ipersonal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:gravity="center"
-        android:text="Información personal" />
+                <ScrollView
+                    android:id="@+id/scrollView3"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
 
-    <Button
-        android:id="@+id/button3_experiencia"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center"
-        android:text="experiencia" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical"
+                        android:layout_marginTop="50dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="@id/textView_etiqueta">
 
-    <Button
-        android:id="@+id/button4_mediosp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|center"
-        android:text="Medios de pago" />
+                                            <EditText
+                                                android:id="@+id/edit_nombres"
+                                                android:layout_width="match_parent"
+                                                android:layout_height="wrap_content"
+                                                android:layout_marginTop="20dp"
+                                                android:hint="@string/Nombres"
+                                                android:textSize="24sp"
+                                                android:visibility="visible"
+                                                app:layout_constraintEnd_toEndOf="parent"
+                                                app:layout_constraintHorizontal_bias="0.0"
+                                                app:layout_constraintStart_toStartOf="parent"
+                                                app:layout_constraintTop_toTopOf="parent"
+                                                tools:visibility="visible" />
+
+                                             <EditText
+                                                 android:id="@+id/edit_ApellidoP"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 android:layout_marginTop="20dp"
+                                                 android:hint="@string/ApellidoP"
+                                                 android:textSize="24sp"
+                                                 app:layout_constraintEnd_toEndOf="parent"
+                                                 app:layout_constraintHorizontal_bias="0.0"
+                                                 app:layout_constraintStart_toStartOf="parent"
+                                                 app:layout_constraintTop_toBottomOf="@+id/edit_nombres" />
+
+                                             <EditText
+                                                 android:id="@+id/edit_ApellidoM"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 android:layout_marginTop="20dp"
+                                                 android:hint="@string/ApellidoM"
+                                                 android:textSize="24sp"
+                                                 app:layout_constraintEnd_toEndOf="parent"
+                                                 app:layout_constraintHorizontal_bias="0.0"
+                                                 app:layout_constraintStart_toStartOf="parent"
+                                                 app:layout_constraintTop_toBottomOf="@+id/edit_ApellidoP" />
+
+                                             <EditText
+                                                 android:id="@+id/edit_Direccion"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 android:layout_marginTop="20dp"
+                                                 android:hint="@string/Direccion"
+                                                 android:textSize="24sp"
+                                                 app:layout_constraintEnd_toEndOf="parent"
+                                                 app:layout_constraintHorizontal_bias="0.0"
+                                                 app:layout_constraintStart_toStartOf="parent"
+                                                 app:layout_constraintTop_toBottomOf="@+id/edit_ApellidoM" />
+
+                                             <EditText
+                                                 android:id="@+id/edit_Ciudad"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 android:layout_marginTop="20dp"
+                                                 android:hint="@string/Ciudad"
+                                                 android:textSize="24sp"
+                                                 app:layout_constraintEnd_toEndOf="parent"
+                                                 app:layout_constraintHorizontal_bias="0.0"
+                                                 app:layout_constraintStart_toStartOf="parent"
+                                                 app:layout_constraintTop_toBottomOf="@+id/edit_Direccion" />
+
+                                             <EditText
+                                                 android:id="@+id/edit_Estado"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 android:layout_marginTop="20dp"
+                                                 android:hint="@string/estado"
+                                                 android:textSize="24sp"
+                                                 app:layout_constraintEnd_toEndOf="parent"
+                                                 app:layout_constraintHorizontal_bias="0.0"
+                                                 app:layout_constraintStart_toStartOf="parent"
+                                                 app:layout_constraintTop_toBottomOf="@+id/edit_Ciudad" />
+
+                                                <EditText
+                                                    android:id="@+id/editTextDate_pais"
+                                                    android:layout_width="match_parent"
+                                                    android:layout_height="wrap_content"
+                                                    android:layout_marginTop="20dp"
+                                                    android:ems="10"
+                                                    android:hint="@string/pais"
+                                                    android:inputType="date"
+                                                    app:layout_constraintEnd_toEndOf="parent"
+                                                    app:layout_constraintStart_toStartOf="parent"
+                                                    app:layout_constraintTop_toBottomOf="@+id/edit_Estado" />
+
+                                             <EditText
+                                                 android:id="@+id/editTextDate_nacimiento"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 android:layout_marginTop="20dp"
+                                                 android:ems="10"
+                                                 android:hint="@string/fecha"
+                                                 android:inputType="date"
+                                                 app:layout_constraintEnd_toEndOf="parent"
+                                                 app:layout_constraintStart_toStartOf="parent"
+                                                 app:layout_constraintTop_toBottomOf="@+id/editTextDate_pais" />
+
+                                             <Button
+                                                 android:id="@+id/button2"
+                                                 android:layout_width="match_parent"
+                                                 android:layout_height="wrap_content"
+                                                 android:layout_marginTop="10dp"
+                                                 android:text="@string/botonGuardar"
+                                                 app:layout_constraintEnd_toEndOf="parent"
+                                                 app:layout_constraintStart_toStartOf="parent"
+                                                 app:layout_constraintTop_toBottomOf="@+id/editTextDate_nacimiento" />
+
+            </LinearLayout>
+
+        </ScrollView>
+
+    </android.support.constraint.ConstraintLayout>
+
 
 </FrameLayout>
